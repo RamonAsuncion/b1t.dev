@@ -1,0 +1,9 @@
+---
+---
+
+@import "light";
+@import "base";
+
+@media (prefers-color-scheme: light) {
+	@import "light";
+}

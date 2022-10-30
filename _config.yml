@@ -1,0 +1,12 @@
+title: main
+email: ramon@nomxz.net
+description: A directory of my projects. 
+baseurl: "/"
+url: "https://nomxz.net" 
+github_username:  RamonAsuncion
+encoding: utf-8
+timezone: America/New_York
+plugins:
+  - jekyll-feed
+sass:
+    sass_dir: ./_scss

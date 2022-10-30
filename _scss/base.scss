@@ -1,0 +1,24 @@
+@charset 'utf-8';
+
+
+@font-face {
+    font-family: 'Terminal';
+	src: url('./fonts/ibm.tff') format('tff');
+}
+
+$base-font-family: 'Terminal', monospace !default;
+$base-font-size:    12px !default;
+
+body { 
+	   background-color: var(--background-color);   
+	   font-family: $base-font-family;  
+	   font-size: $base-font-size;  
+	   margin-top: 25px;
+  	   padding: 0;
+}
+
+
+a {
+	text-decoration: underline;
+}
+
