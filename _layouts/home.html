@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+{{ content }}
+
+
+<pre>
+-----------------------------------
+</pre>
+
+Blogs: 
+
+{% assign contentwonl = content | strip_newlines %} {% unless contentwonl == ""  %} <br /> {% endunless %}
+
+<!--- Jekyll Liquids -->
+{%- if site.posts.size > 0 -%}
+    {%- for post in site.posts -%}
+      {%- assign date_format = "%m-%d-%Y" -%}
+      [{{ post.date | date: date_format }}] <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+	  <br />
+    {%- endfor -%}
+{%- endif -%}

@@ -1,25 +1,25 @@
 ---
 title: /
-layout: default
+layout: home
 ---
 
-```
+<pre>
 -----------------------------------
-```
+</pre>
 
 RAMON ASUNCION 
 
 Programmer
 
-```
+<pre>
 -----------------------------------
-```
+</pre>
 
 I will be programming until the end of time.
 
-```
+<pre>
 -----------------------------------
-```
+</pre>
 
 Links: 
 
