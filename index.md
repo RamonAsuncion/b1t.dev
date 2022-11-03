@@ -24,6 +24,7 @@ I will be programming until the end of time.
 Links: 
 
 [Github](https://www.github.com/RamonAsuncion){:target="_blank"}
+[LinkedIn](https://www.linkedin.com/in/ramonasuncion/){:target="_blank"}
 
 	               .
 	              /=\\
