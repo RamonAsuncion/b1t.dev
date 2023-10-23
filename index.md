@@ -23,8 +23,8 @@ I will be programming until the end of time.
 
 Links: 
 
+[Git](https://git.nomxz.net)
 [Github](https://www.github.com/RamonAsuncion){:target="_blank"}
-[LinkedIn](https://www.linkedin.com/in/ramonasuncion/){:target="_blank"}
 
 	               .
 	              /=\\
@@ -43,6 +43,4 @@ Links:
 	 /===========================\'  /
 	/=============================\/
 
-
-There is so much information about me on the internet you can \
-create a whole timeline of my life. But I feel like a nobody.
+Please contact me at ramon at nomxz.net.
