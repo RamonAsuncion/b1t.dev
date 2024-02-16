@@ -1,6 +1,7 @@
 ---
 title: /
 layout: home
+#layout: development
 ---
 
 <pre>

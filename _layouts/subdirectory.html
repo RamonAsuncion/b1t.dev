@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+Files:
+
+<br />
+
+{% assign contentwonl = content | strip_newlines %} {% unless contentwonl == ""  %} <br /> {% endunless %}
+
+{% for category in page.categories %}
+  {% assign entries = "_posts/" | append: category | list %}
+  {% for entry in entries %}
+     {% if entry[1].type == 'directory' %}
+      <a href="{{ entry[0] }}index.html">{{ entry[0] }}</a>
+     {% elsif entry[1].type == 'file' %}
+      {{ entry[1].date }}
+      <a href="{{ entry[1].path }}">{{ entry[0] }}</a>
+     {% else %}
+      <a href="#"></a>
+     {% endif %}
+     <br />
+  {% endfor %}
+{% endfor %}
+
+<a href='{{site.url}}/'>Back</a>

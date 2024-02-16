@@ -4,20 +4,24 @@ layout: default
 
 {{ content }}
 
-
 <pre>
 -----------------------------------
 </pre>
 
-Blogs: 
+Files:
 
 {% assign contentwonl = content | strip_newlines %} {% unless contentwonl == ""  %} <br /> {% endunless %}
 
-<!--- Jekyll Liquids -->
-{%- if site.posts.size > 0 -%}
-    {%- for post in site.posts -%}
-      {%- assign date_format = "%m-%d-%Y" -%}
-      [{{ post.date | date: date_format }}] <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-	  <br />
-    {%- endfor -%}
-{%- endif -%}
+{% assign entries = "_posts/" | list %} 
+{% for entry in entries %}
+ {% if entry[1].type == 'directory' %}
+  <a href="{{ entry[0] }}index.html">{{ entry[0] }}</a>
+ {% elsif entry[1].type == 'file' %}
+  {{ entry[1].date }}
+  <a href="{{ entry[1].path }}">{{ entry[0] }}</a>
+ {% else %}
+  <a href="#"></a>
+ {% endif %}
+ <br />
+{% endfor %}
+
