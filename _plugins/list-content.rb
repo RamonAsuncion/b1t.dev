@@ -1,8 +1,7 @@
 # Directories
-# A directory should have the href of it's own name following an index.html
-# e.g. /network/index.html. This index.md (under _posts/network) is going 
-# to have subdirectory layout. This layout is going to consits out listing 
-# out all the posts under it's current directory.
+# A directory under the posts directory should have should have 
+# /network/11-11-11-index.html. You should add the subdirectory layout. 
+# This file lists out all files under the directory.
 
 # Files
 # A varaible date, month, year that I'll be used for the date [%m-%d%-Y] format 
@@ -44,7 +43,6 @@ module Jekyll
 
           # FIXME: There should be a base path. Where the back button goes to either 
           # root / or /catgetory/.
-
           renamed_entries[new_file_name] = { 'type' => 'file', 'path' => file_path, 'date' => "[#{date}]"  }
         else
           renamed_entries[filename] = { 'type' => 'other', 'path' => nil, 'date' => nil }
