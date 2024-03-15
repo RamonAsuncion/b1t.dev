@@ -1,19 +1,15 @@
 title: main
-email: ramon@nomxz.net
+email: ramon@b1t.dev
 description: A directory of my projects. 
 baseurl: "/"
-url: "https://nomxz.net" 
+url: "https://b1t.dev" 
 github_username:  RamonAsuncion
 encoding: utf-8
 timezone: America/New_York
-plugins:
-  - jekyll-feed
 sass:
   sass_dir: ./_scss
-# Default: permalink: /:categories/:year/:month/:day/:title
-collections:
- network:
-   output: true
- os:
-   output: true
-
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
