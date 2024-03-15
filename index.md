@@ -24,7 +24,7 @@ I will be programming until the end of time.
 
 Links: 
 
-[Git](https://git.nomxz.net)
+[Git](https://git.b1t.dev)
 [Github](https://www.github.com/RamonAsuncion){:target="_blank"}
 
 	               .
@@ -44,4 +44,4 @@ Links:
 	 /===========================\'  /
 	/=============================\/
 
-Please contact me at ramon at nomxz.net.
+Please contact me at ramon at b1t.dev.
