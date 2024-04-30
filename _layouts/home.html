@@ -8,20 +8,23 @@ layout: default
 -----------------------------------
 </pre>
 
-Files:
+$ ls
+{% assign contentwonl = content | strip_newlines %} {% unless contentwonl == "" %} <br /> {% endunless %}
 
-{% assign contentwonl = content | strip_newlines %} {% unless contentwonl == ""  %} <br /> {% endunless %}
-
-{% assign entries = "_posts/" | list %} 
+{% assign entries = "_posts/" | list %}
+<div class="entries">
+<div class="left">
 {% for entry in entries %}
  {% if entry[1].type == 'directory' %}
-  <a href="{{ entry[0] }}index.html">{{ entry[0] }}</a>
+ <a class="{{ entry[1].class }}" href="{{ entry[0] }}/index.html">{{ entry[0] }}</a>
  {% elsif entry[1].type == 'file' %}
-  {{ entry[1].date }}
-  <a href="{{ entry[1].path }}">{{ entry[0] }}</a>
+ {{ entry[1].date }}
+ <a class="{{ entry[1].class }}" href="{{ entry[1].path }}">{{ entry[0] }}</a>
  {% else %}
-  <a href="#"></a>
+ <a class="{{ entry[1].class }}" href="#"></a>
  {% endif %}
- <br />
 {% endfor %}
+</div>
+<div class="right"></div>
+</div>
 

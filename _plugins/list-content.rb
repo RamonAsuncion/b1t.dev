@@ -18,7 +18,7 @@ module Jekyll
         next if filename.start_with?('.')
         path = File.join(folder, filename)
         if File.directory?(path)
-          renamed_entries["#{filename}/"] = { 'type' => 'directory', 'path' => nil, 'date' => nil }
+          renamed_entries["#{filename}"] = { 'type' => 'directory', 'class' => 'directory', 'path' => nil, 'date' => nil }
         elsif File.file?(path) && File.extname(path) == '.md'
           ignore_file = "11-11-11-index"
           base_name = File.basename(path, '.*')
@@ -43,9 +43,9 @@ module Jekyll
 
           # FIXME: There should be a base path. Where the back button goes to either 
           # root / or /catgetory/.
-          renamed_entries[new_file_name] = { 'type' => 'file', 'path' => file_path, 'date' => "[#{date}]"  }
+          renamed_entries[new_file_name] = { 'type' => 'file', 'class' => 'file', 'path' => file_path, 'date' => nil }
         else
-          renamed_entries[filename] = { 'type' => 'other', 'path' => nil, 'date' => nil }
+          renamed_entries[filename] = { 'type' => 'other', 'class' => 'other', 'path' => nil, 'date' => nil }
         end
       end
       renamed_entries

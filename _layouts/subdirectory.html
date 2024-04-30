@@ -2,25 +2,29 @@
 layout: default
 ---
 
-Files:
-
+$ ls
 <br />
-
-{% assign contentwonl = content | strip_newlines %} {% unless contentwonl == ""  %} <br /> {% endunless %}
+{% assign contentwonl = content | strip_newlines %} {% unless contentwonl == "" %} <br /> {% endunless %}
 
 {% for category in page.categories %}
-  {% assign entries = "_posts/" | append: category | list %}
+{% assign entries = "_posts/" | append: category | list %}
+<div class="entries">
+<div class="left">
   {% for entry in entries %}
-     {% if entry[1].type == 'directory' %}
-      <a href="{{ entry[0] }}index.html">{{ entry[0] }}</a>
-     {% elsif entry[1].type == 'file' %}
-      {{ entry[1].date }}
-      <a href="{{ entry[1].path }}">{{ entry[0] }}</a>
-     {% else %}
-      <a href="#"></a>
-     {% endif %}
-     <br />
+  {% if entry[1].type == 'directory' %}
+  <a class="{{ entry[1].class }}" href="{{ entry[0] }}index.html">{{ entry[0] }}</a>
+  {% elsif entry[1].type == 'file' %}
+  {{ entry[1].date }}
+  <a class="{{ entry[1].class }}" href="{{ entry[1].path }}">{{ entry[0] }}</a>
+  {% else %}
+  <a class="{{ entry[1].class }}" href="#"></a>
+  {% endif %}
   {% endfor %}
+</div>
+<div class="right"></div>
 {% endfor %}
+</div>
 
-<a href='{{site.url}}/'>Back</a>
+<br /><br />
+<a class="back" href='{{site.url}}/'>Back</a>
+
