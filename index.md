@@ -16,27 +16,32 @@ Programmer
 </pre>
 
 Securing the digital frontier, one network at a time.
+<br /><br />
+
+Programming since 2017.
 
 <pre>
 -----------------------------------
 </pre>
 
-Links: 
+$ ./links
 
-[Git](https://git.b1t.dev)
-[Github](https://www.github.com/RamonAsuncion){:target="_blank"}
+[Git](https://git.b1t.dev){:class="yellow-link"}
+[Github](https://www.github.com/RamonAsuncion){:class="yellow-link" target="_blank"}
 
-<pre>
-              +-----+
-              | C   |
-              +-----+
-                 |
-                 |
-+-----+     +----------+     +-----+
-| A   |-----|  Server  |-----| B   |
-+-----+     +----------+     +-----+ 
-
-</pre>
+<div class="ascii">
+    <pre>
+                  +-----+
+                  | C   |
+                  +-----+
+                     |
+                     |
+    +-----+     +----------+     +-----+
+    | A   |-----|  Server  |-----| B   |
+    +-----+     +----------+     +-----+ 
+    
+    </pre>
+</div>
 
 Please contact me at ramon at b1t.dev.
 
