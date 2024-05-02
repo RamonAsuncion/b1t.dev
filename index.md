@@ -15,7 +15,7 @@ Programmer
 -----------------------------------
 </pre>
 
-Securing the digital frontier, one network at a time.
+Connecting the world, one byte at a time.
 <br /><br />
 
 Programming since 2017.
