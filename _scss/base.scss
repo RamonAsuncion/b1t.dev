@@ -3,7 +3,10 @@
 
 
 $base-font-family: 'Source Code Pro', monospace !default;
-$base-font-size:    23.5px !default;
+$base-font-size:    12.5px !default;
+$mobile-font-size:  12px!default; 
+$container-width:   90%!default;
+$container-max-width: 600px!default;
 
 body {
   display: flex;
@@ -16,6 +19,15 @@ body {
   font-size: $base-font-size;
 }
 
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: $mobile-font-size;
+  }
+ .container {
+    width: $container-width;
+    max-width: $container-max-width;
+  }
+}
 
 pre {
   font-family: $base-font-family !important;
