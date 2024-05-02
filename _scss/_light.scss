@@ -1,6 +1,10 @@
 :root {
-	--base-color: #f5f5f5;
-	--background: #fff;
-	--text-color: var(--base-color);
- 	--border: dashed 1px rgba(0, 0, 0);
+  --base-color: #000;
+  --border: dashed 0.5px rgba(0, 0, 0, 1);
+  --selection-background: rgba(0, 0, 0, 0.99);
+  --selection-text: #FFF;
+  --background-color: #FFF;
+  --text-color: var(--base-color);
+  --placeholder-color: var(--base-color);
+  --link-color: var(--base-color);
 }

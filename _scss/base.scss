@@ -2,10 +2,11 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700');
 
 
-$base-font-family: 'Source Code Pro', monospace !default;
-$base-font-size:    12.5px !default;
-$mobile-font-size:  12px!default; 
-$container-width:   90%!default;
+$base-font-family:    'Source Code Pro', monospace!default;
+$base-font-size:      12.5px!default;
+$mobile-font-size:    12px!default; 
+$base-line-height:    1.5!default;
+$container-width:     90%!default;
 $container-max-width: 600px!default;
 
 body {
@@ -17,13 +18,20 @@ body {
   background-color: var(--background-color);
   font-family: $base-font-family;
   font-size: $base-font-size;
+  line-height: $base-line-height!important;
+}
+
+.dash {
+  display: block;
+  border: var(--border);  
+  margin-bottom: 1em;
 }
 
 @media only screen and (max-width: 600px) {
   body {
     font-size: $mobile-font-size;
   }
- .container {
+  .container {
     width: $container-width;
     max-width: $container-max-width;
   }
@@ -34,36 +42,16 @@ pre {
 }
 
 a {
-  color: #d4af37; 
+  color: var(--link-color);
   text-decoration: underline; 
 }
 
-a:visited {
-  color: #6c757d; 
+a:hover {
+  color: var(--background-color); 
+  background-color: var(--base-color)
 }
 
-.yellow-link {
-  color: #d4af37; 
-  text-decoration: underline; 
-}
-
-.yellow-link:visited {
-  color: #d4af37;  
-}
-
-
-.directory {
-  color: #007bff !important;
-  text-decoration: none; 
-}
-
-.file {
-  color: #6c757d !important;
-  text-decoration: none; 
-}
-
-.back {
-  color: black !important;
+.directory, .file, .back {
   text-decoration: none; 
 }
 
@@ -92,3 +80,15 @@ a:visited {
 .right {
   flex: 1;
 }
+
+::selection { 
+  background: var(--selection-background);  
+  color: var(--selection-text); 
+}
+
+::-moz-selection { 
+  background: var(--selection-background);  
+  color: var(--selection-text); 
+}
+
+

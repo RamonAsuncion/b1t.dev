@@ -4,9 +4,7 @@ layout: default
 
 {{ content }}
 
-<pre>
------------------------------------
-</pre>
+<span class="dash"></span>
 
 $ ls
 {% assign contentwonl = content | strip_newlines %} {% unless contentwonl == "" %} <br /> {% endunless %}
