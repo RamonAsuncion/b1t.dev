@@ -3,20 +3,20 @@ title: /
 layout: home
 ---
 
-<span class="dash"></span>
+<hr>
 
 RAMON ASUNCION 
 
 Programmer
 
-<span class="dash"></span>
+<hr>
 
 Connecting the world, one byte at a time.
 <br /><br />
 
 Programming since 2017.
 
-<span class="dash"></span>
+<hr>
 
 $ ./links
 

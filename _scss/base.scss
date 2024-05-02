@@ -21,10 +21,12 @@ body {
   line-height: $base-line-height!important;
 }
 
-.dash {
-  display: block;
-  border: var(--border);  
-  margin-bottom: 1em;
+hr {
+  border: none;
+  border-top: var(--border); 
+  color: var(--text-color);
+  height: 5px;
+  width: 100%;
 }
 
 @media only screen and (max-width: 600px) {
