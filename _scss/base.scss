@@ -10,7 +10,7 @@ $container-width:     90%!default;
 $container-max-width: 600px!default;
 
 body {
-  display: flex;
+  display: flex; 
   justify-content: center;
   align-items: flex-start;
   min-height: 100vh;
@@ -28,6 +28,14 @@ hr {
   height: 5px;
   width: 100%;
 }
+
+.container {
+  max-width: 600px; 
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  white-space: normal;
+}
+
 
 @media only screen and (max-width: 600px) {
   body {
