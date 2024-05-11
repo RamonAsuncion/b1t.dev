@@ -18,7 +18,7 @@ module Jekyll
         next if filename.start_with?('.')
         path = File.join(folder, filename)
         if File.directory?(path)
-          renamed_entries["#{filename}"] = { 'type' => 'directory', 'class' => 'directory', 'path' => nil, 'date' => nil }
+          renamed_entries["#{filename}/"] = { 'type' => 'directory', 'class' => 'directory', 'path' => nil, 'date' => nil }
         elsif File.file?(path) && File.extname(path) == '.md'
           ignore_file = "11-11-11-index"
           base_name = File.basename(path, '.*')
