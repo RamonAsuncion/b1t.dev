@@ -16,6 +16,12 @@ Connecting the world, one byte at a time.
 
 Programming since 2017.
 
+Reverse engineering, programming languages, 
+<br>
+computer networks, cyber security, 
+<br>
+and Linux development.
+
 <hr>
 
 $ ./links
