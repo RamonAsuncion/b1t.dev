@@ -1,9 +1,9 @@
 title: main
-email: ramon@b1t.dev
-description: A directory of my projects. 
+email: email@example.com
+description: A description of the site
 baseurl: "/"
-url: "https://b1t.dev" 
-github_username:  RamonAsuncion
+url: "https://example.com"
+github_username:  GithubUsername
 encoding: utf-8
 timezone: America/New_York
 sass:

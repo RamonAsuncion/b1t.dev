@@ -5,41 +5,30 @@ layout: home
 
 <hr>
 
-RAMON ASUNCION 
+FIRST LAST
 
-Programmer
+Software developer
 
 <hr>
 
-Connecting the world, one byte at a time.
-<br /><br />
-
-Programming since 2017.
-
-Reverse engineering, programming languages, 
-<br>
-computer networks, cyber security, 
-<br>
-and Linux development.
+Your bio
 
 <hr>
 
 $ ./links
 
-[Git](https://git.b1t.dev){:class="yellow-link"}
-[GitHub](https://www.github.com/RamonAsuncion){:class="yellow-link" target="_blank"}
+[Git](https://git.example.com){:class="yellow-link"}
+[GitHub](https://www.github.com/GitHubUsername){:class="yellow-link" target="_blank"}
 
 <pre>
-                  +-----+
-                  | C   |
-                  +-----+
-                     |
-                     |
-    +-----+     +----------+     +-----+
-    | A   |-----|  Server  |-----| B   |
-    +-----+     +----------+     +-----+ 
-    
+
+Some ascii art
+ ______
+| |__| |
+|  ()  |
+|______|
+
 </pre>
 
-Please contact me at ramon at b1t.dev.
+Please contact me at email at example.com.
 
